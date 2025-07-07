@@ -233,4 +233,10 @@ function filterTools(searchTerm = '') {
 }
 
 // 页面加载完成后初始化
-document.addEventListener('DOMContentLoaded', initPage); 
+document.addEventListener('DOMContentLoaded', initPage);
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('sw.js');
+  });
+} 
