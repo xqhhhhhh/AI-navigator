@@ -233,22 +233,4 @@ function filterTools(searchTerm = '') {
 }
 
 // 页面加载完成后初始化
-document.addEventListener('DOMContentLoaded', initPage);
-
-/* 针对屏幕宽度小于600px的设备（如手机） */
-@media (max-width: 600px) {
-  body {
-    padding: 10px;
-    font-size: 16px;
-  }
-  .container {
-    width: 100%;
-    flex-direction: column;
-  }
-  /* 根据实际结构调整下方样式 */
-  .your-class {
-    /* 让内容堆叠、字体变大、按钮变宽等 */
-    width: 100%;
-    margin-bottom: 10px;
-  }
-} 
+document.addEventListener('DOMContentLoaded', initPage); 
